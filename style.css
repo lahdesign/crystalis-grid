@@ -1,5 +1,4 @@
 .logo-container { 
-  width:80%;
   display: grid; 
   grid-template-columns: 1fr; 
   grid-template-rows: 1fr; 
@@ -8,15 +7,14 @@
   }
   .static { grid-area: 1 / 1 / 2 / 2; 
     position:absolute;
-    background: white;} 
+    background: white;}  
 
     .static:hover {
       opacity:0;
     }
-  .active { grid-area: 1 / 1 / 2 / 2; } 
+  .active { grid-area: 1 / 1 / 2 / 2; 
   
-  
-
+  }
 
   nav{
   display: inline-block;
@@ -45,7 +43,7 @@ nav li {
 
 
 * {
-    font-family: 'Montserrat', sans-serif; CHANGE
+    /* font-family: 'Montserrat', sans-serif; CHANGE */
     margin: 0;
     padding: 0;
 }
@@ -55,12 +53,10 @@ img {
     width: 100%;
     height: auto;
 }
-
 /* NAVBAR CSS */
 nav{
     padding-left:4em;
     padding-right: 4em;
-    /* TODO: figure out no longer staying fixed */
     position: fixed;
     width: 100%;
     top:0;
@@ -121,25 +117,28 @@ nav{
 .image-gallery {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
     grid-template-areas:
-    ". a b c ."
-    ". d e f ."
+    "a b"
+    "c d"
+    "e f"
     ;
 }
 
 .box-styling {
-    height: 350px;
+    /* height: 350px; */
+    /* width:350px; */
     background-color: rgb(110, 110, 110);
     /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
   }
 
 .box-wrapper{
-  height:350px;
+  /* height:350px; */
   border-radius: 1%;
 }
 .box1 {
